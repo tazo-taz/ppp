@@ -20,6 +20,7 @@ try:
     else:
         print(text)
 
+        
 
 except:
     print("xmis amocnoba ver moxerxda")  # In case of voice not recognized  clearly
