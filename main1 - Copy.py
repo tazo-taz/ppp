@@ -20,7 +20,11 @@ try:
     if 'search in google' in text.lower():
         f_text = 'https://www.google.co.in/search?q=' + text[16:]
         wb.get(chrome_path).open(f_text)
-    
+    elif 'search website' in text.lower():
+        wb.get(chrome_path).open(text[14:])
+    else:
+        print(text)
+
 
 except:
     print("xmis amocnoba ver moxerxda")        # In case of voice not recognized  clearly
